@@ -10,8 +10,8 @@ public class HeapSort
         for (int i = n / 2 - 1; i >= 0; i--)
             heapify(arr, n, i);
 
-       // Один за другим извлекаем элементы из кучи
-        for (int i=n-1; i>=0; i--)
+        // Один за другим извлекаем элементы из кучи
+        for (int i = n - 1; i >= 0; i--)
         {
             // Перемещаем текущий корень в конец
             int temp = arr[0];
@@ -30,8 +30,8 @@ public class HeapSort
     {
         int largest = i;
         // Инициализируем наибольший элемент как корень
-        int l = 2*i + 1; // left = 2*i + 1
-        int r = 2*i + 2; // right = 2*i + 2
+        int l = 2 * i + 1; // left = 2*i + 1
+        int r = 2 * i + 2; // right = 2*i + 2
 
         // Если левый дочерний элемент больше корня
         if (l < n && arr[l] > arr[largest])
@@ -62,7 +62,7 @@ public class HeapSort
     //Управляющая программа
     public static void Main()
     {
-        int[] arr = {12, 11, 13, 5, 6, 7};
+        int[] arr = { 12, 11, 13, 5, 6, 7 };
         int n = arr.Length;
 
         Console.WriteLine("Исходный массив:");
